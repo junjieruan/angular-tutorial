@@ -1,0 +1,13 @@
+ {
+      "name":"平凡的世界",
+      "id":"ping-fan",
+      "writer":"路遥",
+      "dynasty":"建国后",
+      "imageUrl":"img/books/pingfan.png",
+      "images":[
+         "img/books/pingfan.png"
+      ],
+      "snippet":"《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式地表现中国当代城乡社会生活的长篇小说,全书共三部。",
+      "year":1980,
+      "price":58
+}

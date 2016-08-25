@@ -1,0 +1,14 @@
+{
+      "name":"三只小猪",
+      "id":"san-zhi",
+      "writer":"Burt Gillett",
+      "dynasty":"美国30年代",
+      "imageUrl":"img/books/sanzhi.png",
+      "images":[
+      	"img/books/sanzhi.png",
+      	"img/books/sanzhi02.png"
+      	],
+      "snippet":"《三只小猪》是由Burt Gillett执导的一部动画作品，于1933年上映，这部动画片也是三十年代电影极为少有的直接指向二十世纪三十年代美国大萧条的电影",
+      "year":1800,
+      "price":23
+}

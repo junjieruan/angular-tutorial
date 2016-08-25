@@ -1,0 +1,13 @@
+ {
+        "name":"新华字典", 
+        "id":"xin-hua",
+        "writer":"商务印书馆",
+         "dynasty":"中国近代",
+        "imageUrl":"img/books/xinhua.png",
+        "images":[
+         "img/books/xinhua.png"
+         ],
+        "snippet":"《新华字典》是中国第一部现代汉语字典。最早的名字叫《伍记小字典》，但未能编纂完成。自1953年，开始重编，其凡例完全采用《伍记小字典》",
+        "year":1971,
+        "price":44
+}

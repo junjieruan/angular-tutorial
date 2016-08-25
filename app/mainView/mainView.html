@@ -1,0 +1,71 @@
+<div ng-controller="mainViewCtrl">
+<h1>书籍查阅网站</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+        <p>古代名著</p>
+        <ul>
+          <li ng-repeat="book in firstbooks">
+              <p ng-click="setImage(book.imageUrl,book.name)">{{book.name}}</p>         <!--event handler-->
+          </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <p>70年代</p>
+         <ul>
+          <li ng-repeat="book in secondbooks">
+              <p ng-click="setImage(book.imageUrl,book.name)">{{book.name}}</p>
+          </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <p>近现代</p>
+        <ul>
+          <li ng-repeat="book in thirdbooks">
+              <p ng-click="setImage(book.imageUrl,book.name)">{{book.name}}</p>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container-fluid part2">
+<div class="row">
+    <div class="col-md-2">
+        <p>搜索书名：
+            <input type="text" ng-model="query">                                  <!--filter过滤器-迭代器-->
+        </p>
+        <p>书籍排序：
+          <select ng-model="orderProp">                                           <!--two-way data binding-->
+            <option value="name">书名</option>
+            <option value="year">出版年份</option>
+          </select>
+        </p>
+          低于
+          <p>
+          ￥<input type="text" ng-model="pricefilter">                     <!--custom filter-->
+          </p>的图书  
+    </div>
+    <div class="col-md-5">
+        <div class="jumbotron">
+             <h2>{{mainName}}</h2>
+            <img ng-src="{{mainImageUrl}}">
+        </div>
+    </div>
+    <div class="col-md-5">
+        <h3>书单</h3>
+        <ul class="books">
+          <li ng-repeat="book in books | filter:query | orderBy:orderProp " class="book-list-item">  
+                                                                                          <!-- checkmark:pricefilter -->
+           <a href="#!/main/{{book.id}}">                                                <!--id绑定详情页,路由指定详情页模板-->
+            <img ng-src="{{book.imageUrl}}">
+           </a>
+               <a href="#!/main/{{book.id}}">{{book.name}}  —— {{book.year}}</a>                          <!--打开书籍详情页-->
+               <p>{{book.snippet}}  <i>￥{{book.price}}元</i>  </p><hr>
+          </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+</div>

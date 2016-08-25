@@ -1,0 +1,94 @@
+/* Animate `ngRepeat` in `phoneList` component */
+*{
+  margin:0;
+  padding:0;
+}
+
+.col-md-4 ul{
+  list-style:none;
+  display:none;
+   position: absolute;
+  z-index: 9999;
+}
+
+.col-md-4:hover ul{
+  display: block;
+}
+
+.col-md-4 li{
+  height: 50px;
+  line-height: 50px;
+  background-color: #eee;
+  width:400px;
+}
+
+.col-md-4 li:hover{
+  background-color: gray;
+}
+
+.jumbotron{
+  height: 550px;
+}
+
+.col-md-5 li{
+  margin-top:10px;
+  list-style: none;
+  position: relative;
+}
+
+.books img{
+  width:100px;
+  height:100px;
+  float: right;
+  position: relative;
+}
+
+.book-list-item.ng-enter,
+.book-list-item.ng-move,
+.book-list-item.ng-leave{
+  overflow: hidden;
+  transition: 0.5s linear all;
+}
+.book-list-item.ng-enter.ng-enter-active,                                 
+.book-list-item.ng-move.ng-move-active,
+.book-list-item.ng-leave
+{
+  margin-top:15px;
+  opacity:1;
+   height: 120px;
+}
+
+.book-list-item.ng-enter,
+.book-list-item.ng-move,
+.book-list-item.ng-leave.ng-leave-active
+{
+  opacity:0;
+  height: 0;
+  margin-top:0px;
+}
+
+/* Animate view transitions with `ngView` */
+.view-frame {
+  margin-top: 20px;
+}
+
+.view-frame.ng-enter {
+  animation: 1s fade-in;
+  z-index: 100;
+}
+
+.view-frame.ng-leave {
+  animation: 1s fade-out;
+  z-index: 99;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+

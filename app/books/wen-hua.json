@@ -1,0 +1,13 @@
+ {
+        "name":"文化苦旅",
+        "id":"wen-hua",
+         "writer":"余秋雨",
+        "dynasty":"中华民国",
+        "imageUrl":"img/books/wenhua.png",
+        "images":[
+         "img/books/wenhua.png"
+     	 ],
+        "snippet":"《文化苦旅》是1992年首次由东方出版中心出版的散文集，作者是余秋雨。该散文集是作者对国内外的文化进行考察和思考，结合自己的人生体验和对社会、历史、文化的深刻认识而撰写的游记。",
+        "year":1990,
+        "price":32
+}

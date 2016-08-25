@@ -1,0 +1,50 @@
+<div ng-controller="View2Ctrl">
+<div class="phone-images">
+  <img ng-src="{{img}}" class="phone"
+      ng-class="{selected: img === mainImageUrl}"
+      ng-repeat="img in book.images" />
+</div>
+
+<h1>{{book.name}}</h1>
+<p>{{book.snippet}}</p>
+
+<ul class="phone-thumbs">
+  <li ng-repeat="img in book.images">                                       <!--images数组 列表展示-->
+    <img ng-src="{{img}}" ng-click="setImage(img)" />
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+     <span>书名</span>
+    <dl>
+      <dd>{{book.name}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>作者</span>
+    <dl>
+      <dd>{{book.writer}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>朝代</span>
+    <dl>
+      <dd>{{book.dynasty}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>出版年份</span>
+    <dl>
+      <dd>{{book.year}}年</dd>
+    </dl>
+  </li>
+  <li>
+    <span>价格</span>
+    <dl>
+      <dd>{{book.price}}元</dd>
+    </dl>
+  </li>
+</ul>
+
+</div>

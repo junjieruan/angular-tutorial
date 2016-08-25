@@ -1,0 +1,15 @@
+ {
+        "name":"红楼梦",
+        "id":"hong-lou",
+        "writer":"曹雪芹",
+        "dynasty":"清代",
+        "imageUrl":"img/books/honglou.png",
+        "images":[
+        		"img/books/honglou.png",
+        		"img/books/honglou02.jpg",
+        		"img/books/honglou03.jpg"
+        	],
+        "snippet":"《红楼梦》,中国古典四大名著之首,清代作家曹雪芹创作的章回体长篇小说,又名《石头记》《金玉缘》。此书分为120回“程本”和80回“脂本”两种版本系统。新版通行本前80回据脂本汇校，后40回据程本汇校，署名“曹雪芹著“",
+        "year":1900,
+        "price":91
+}
