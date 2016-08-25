@@ -57,9 +57,9 @@ app/                    --> all of the source files for the application
       interpolate-filter_test.js --> interpolate filter tests
   mainView/                --> 书籍查阅主页面
     mainView.html            --> 主页面 template
-    mainView.js     --> 主页面 controller
+    mainView.js           --> 主页面 controller
     mainView_test.js         --> tests of the controller
-  view2/                --> 书籍详情页
+  view2/                   --> 书籍详情页
     view2.html            --> 详情页 template
     view2.js              --> 详情页 controller
     view2_test.js         --> tests of the controller
@@ -76,9 +76,9 @@ app/                    --> all of the source files for the application
     ...
   app.js                --> 应用主module（对子module，ngAnimate动画，ngRoute路由等依赖 ）
   app.css               --> 默认样式表
-  app.animations.js            --> 页面动画 (.animation指定操作的元素)
-  app.animations.css           --> 页面动画样式表
-  index.html            --> 主模板(用于添加局部模板 ng-view)
+  app.animations.js     --> 动画 (.animation指定操作的元素)
+  app.animations.css    --> 动画样式表
+  index.html            --> 主模板(ng-view 用于添加局部模板)
   index-async.html      --> just like index.html, but loads js files asynchronously
 karma.conf.js         --> config file for running unit tests with Karma
 e2e-tests/            --> end-to-end tests
@@ -94,3 +94,6 @@ e.g.$routeParams用于路由传值，与：符号结合，根据路由值使$htt
 
 template中要声明ng-controller，确定作用域。
 filter过滤器，ng-repeat用于操作数组，ng-click(Event Handlers),ng-src等方法
+
+动画样式表css中，ng-enter,ng-move,ng-leave表示元素不同状态，后面加-starting或-active表示完成前后的状态
+还可以定义@keyframes动画来表现
