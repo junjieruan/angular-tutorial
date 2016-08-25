@@ -92,5 +92,5 @@ e2e-tests/            --> end-to-end tests
 然后在controller管理控制逻辑，可能用$http请求数据（根据路由值获取时要用$routeParams）,供相应的template使用
 e.g.$routeParams用于路由传值，与：符号结合，根据路由值使$http请求动态请求数据
 
-template中要声明ng-controller，确定作用域
+template中要声明ng-controller，确定作用域。
 filter过滤器，ng-repeat用于操作数组，ng-click(Event Handlers),ng-src等方法
