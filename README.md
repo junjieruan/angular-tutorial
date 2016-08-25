@@ -58,11 +58,10 @@ app/                    --> all of the source files for the application
   mainView/                --> 书籍查阅主页面
     mainView.html            --> 主页面 template
     mainView.js     --> 主页面 controller
-    （依赖$ngRoute,用.config()管理路由,路由中包含templateUrl与controller声明；.controller()管理控制逻辑;$http请求数据）
     mainView_test.js         --> tests of the controller
   view2/                --> 书籍详情页
     view2.html            --> 详情页 template
-    view2.js              --> 详情页 controller ($routeParams用于路由传值，与：符号结合，根据路由值使$http请求动态请求数据)
+    view2.js              --> 详情页 controller
     view2_test.js         --> tests of the controller
   img/                    -->图片源
     books/
@@ -89,7 +88,9 @@ e2e-tests/            --> end-to-end tests
 
 ### Clone angular-seed
 每个页面控制js中都引入依赖$ngRoute,用.config()管理路由——路由中包含templateUrl指明模板html与声明controller控制器
-然后再controller中$http请求数据（根据路由值获取时要用$routeParams）,供相应的template使用
+
+然后在controller管理控制逻辑，可能用$http请求数据（根据路由值获取时要用$routeParams）,供相应的template使用
+e.g.$routeParams用于路由传值，与：符号结合，根据路由值使$http请求动态请求数据
 
 template中要声明ng-controller，确定作用域
 filter过滤器，ng-repeat用于操作数组，ng-click(Event Handlers),ng-src等方法
