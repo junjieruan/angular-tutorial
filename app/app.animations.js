@@ -4,7 +4,7 @@ angular.module('myApp')
 
 .animation('.phone', function phoneAnimationFactory() {                           //.phone是target element
     return {
-      addClass: animateIn,
+      addClass: animateIn,                                      //有class新增时(selected)，调用animateIn
       removeClass: animateOut
     };
 

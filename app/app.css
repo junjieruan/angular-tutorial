@@ -91,3 +91,23 @@ h1 {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+/*loginView html css*/
+.content{
+  margin-top:150px;
+}
+
+.form-control{
+  display: inline-block;
+  width:80%;
+  float: right;
+}
+
+.col-lg-6>div{
+  margin-top: 30px;
+}
+
+.checkbox{
+  width:80%;
+  float: right;
+}

@@ -5,11 +5,12 @@ angular.module('myApp', [
   'ngRoute',
   'ngAnimate',
   'myApp.mainView',
+  'myApp.loginView',
   'myApp.view2',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/main'});
+  $routeProvider.otherwise({redirectTo: '/login'});
 }]);

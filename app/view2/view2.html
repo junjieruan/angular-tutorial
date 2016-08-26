@@ -1,8 +1,8 @@
 <div ng-controller="View2Ctrl">
 <div class="phone-images">
   <img ng-src="{{img}}" class="phone"
-      ng-class="{selected: img === mainImageUrl}"
-      ng-repeat="img in book.images" />
+      ng-class="{selected: img === mainImageUrl}"                                
+      ng-repeat="img in book.images" />                                      <!--选中时，class:selected-->
 </div>
 
 <h1>{{book.name}}</h1>

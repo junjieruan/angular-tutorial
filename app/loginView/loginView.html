@@ -1,0 +1,68 @@
+<div ng-controller="loginViewCtrl">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Book Reader</a>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+            <li><a ng-click="setName()">Register</a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<article class="content">
+  <div class="row">
+     <div class="col-lg-2">
+     </div>
+     <div class="col-lg-6">
+        <h1>{{login}}</h1>
+        <div>
+          {{Name}}:<input type="text" class="form-control" placeholder="{{Name}}" ng-model="myName">
+        </div>
+        <div>
+          {{Password}}:<input type="text" class="form-control" placeholder="{{Password}}" ng-model="myPassword">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+        <div class="checkbox">
+          <button class="btn btn-success" type="submit" ng-click="signIn()" data-toggle="modal" data-target="#myModal">{{SignIn}}</button>                                    <!--data-toggle,data-target弹出模态框-->
+        </div>
+     </div>
+
+  </div>
+</article>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">{{loginResult}}</h4>
+      </div>
+      <div class="modal-body">
+        {{loginText}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="toMainView()">确定</button>  
+        <!--data-dismiss去除框体,点击事件触发页面跳转-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-brand">Angular seed app: v<span app-version></span></div>
+  </div>
+</nav>
+    
+
+</div>
