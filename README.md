@@ -95,15 +95,15 @@ e2e-tests/            --> end-to-end tests
 ### Clone angular-seed
 每个页面控制js中都引入依赖$ngRoute,用.config()管理路由——路由中包含templateUrl指明模板html与声明controller控制器
 
-然后在controller管理控制逻辑，可能用$http请求数据（根据路由值获取时要用$routeParams）,供相应的template使用
+然后在controller管理控制逻辑，可能用$http请求数据（根据路由值获取时要用$routeParams）,供相应的template使用  
 e.g.$routeParams用于路由传值，与：符号结合，根据路由值使$http请求动态请求数据
 
-template中要声明ng-controller，确定作用域。
+template中要声明ng-controller，确定作用域。  
 filter过滤器，ng-repeat用于操作数组，ng-click(Event Handlers),ng-src等方法
 
-动画样式表css中，ng-enter,ng-move,ng-leave表示元素不同状态，后面加-starting或-active表示完成前后的状态
+动画样式表css中，ng-enter,ng-move,ng-leave表示元素不同状态，后面加-starting或-active表示完成前后的状态  
 还可以定义@keyframes动画来表现
 
-自定义服务$ngResource:
-.config()方法中，return $resource对象,第一个属性是url,第二个属性是给url赋值,第三个属性是方法(客户端传给服务端的方法,url后跟的查询参数,返回的Array是否为true)
+自定义服务$ngResource:  
+.config()方法中，return $resource对象,第一个属性是url,第二个属性是给url赋值,第三个属性是方法(客户端传给服务端的方法,url后跟的查询参数,返回的Array是否为true)  
 controller函数中服务名传参，调用服务中的方法，注意：异步请求，.function(success){}返回数据成功才进行后续操作。
