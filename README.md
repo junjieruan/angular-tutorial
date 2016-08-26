@@ -63,16 +63,22 @@ app/                    --> all of the source files for the application
     view2.html            --> 详情页 template
     view2.js              --> 详情页 controller
     view2_test.js         --> tests of the controller
+  loginView/              -->登录页
+    loginView.html        
+    loginView.js
   img/                    -->图片源
     books/
       honglou.png
       sanzhi.png
       ...
+  service/
+    service.js            -->自定义服务
   books/                  -->本地json数据，用于$http请求
     books.json
     first.json
     second.json
     honglou.json
+    userLogin.json        -->登录验证
     ...
   app.js                --> 应用主module（对子module，ngAnimate动画，ngRoute路由等依赖 ）
   app.css               --> 默认样式表
